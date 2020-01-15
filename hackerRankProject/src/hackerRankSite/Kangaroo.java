@@ -20,6 +20,7 @@ public class Kangaroo {
     			return "NO";
     		if(v1<=v2 && x1+v1*i < x2+v2*i)
     			return "NO";
+    		i += 1;
     	}
     	return "";
     }
