@@ -37,6 +37,8 @@ public class Day10BinaryNumbers {
     			cont = 0;
     		
     	}
+    	if(cont>res)
+			res = cont;
     	return res;
     }
     public static void main(String[] args) {

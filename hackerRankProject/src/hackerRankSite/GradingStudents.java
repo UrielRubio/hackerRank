@@ -10,36 +10,7 @@ import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
-
-class Result {
-
-    /*
-     * Complete the 'gradingStudents' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts INTEGER_ARRAY grades as parameter.
-     */
-
-    public static List<Integer> gradingStudents(List<Integer> grades) {
-    // Write your code here
-        List<Integer> res = new ArrayList<Integer>();
-        int nextMultiple5;
-        for(int i=0; i<grades.size(); i++) {
-            if(grades.get(i)>=38) {
-                nextMultiple5 = (grades.get(i) / 5 + 1) * 5;
-                if(nextMultiple5 - grades.get(i) < 3)
-                    res.add(nextMultiple5);
-                else
-                    res.add(grades.get(i));
-            }else
-                res.add(grades.get(i));
-        }
-        return res;
-    }
-
-
-}
-
+/*
 public class GradingStudents {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -71,3 +42,32 @@ public class GradingStudents {
         bufferedWriter.close();
     }
 }
+class Result {
+
+    /*
+     * Complete the 'gradingStudents' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts INTEGER_ARRAY grades as parameter.
+     */
+
+  /*  public static List<Integer> gradingStudents(List<Integer> grades) {
+    // Write your code here
+        List<Integer> res = new ArrayList<Integer>();
+        int nextMultiple5;
+        for(int i=0; i<grades.size(); i++) {
+            if(grades.get(i)>=38) {
+                nextMultiple5 = (grades.get(i) / 5 + 1) * 5;
+                if(nextMultiple5 - grades.get(i) < 3)
+                    res.add(nextMultiple5);
+                else
+                    res.add(grades.get(i));
+            }else
+                res.add(grades.get(i));
+        }
+        return res;
+    }
+
+
+}
+*/
