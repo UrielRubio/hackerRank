@@ -7,7 +7,7 @@ interface AdvancedArithmetic {
 	int divisorSum(int n);
 }
 
-class Calculator implements AdvancedArithmetic {
+/*class Calculator implements AdvancedArithmetic {
 	public int divisorSum(int n) {
 		int sum = 0;
 		for (int i = 1; i <= n; i++)
@@ -15,7 +15,7 @@ class Calculator implements AdvancedArithmetic {
 				sum += i;
 		return sum;
 	}
-}
+}*/
 
 public class Day19Interfaces {
 
