@@ -24,9 +24,9 @@ public class Day20Sorting {
     		if(numberOfSwaps == 0)
     			break;
     	}
-    	System.out.println("Array is sorted in " + numberOfSwaps + " swaps");
-    	System.out.println(a[0]);
-    	System.out.println(a[a.length-1]);
+    	System.out.println("Array is sorted in " + numberOfSwaps + " swaps.");
+    	System.out.println("First Element: " + a[0]);
+    	System.out.println("Last Element: " + a[a.length-1]);
     }
     
 	public static void main(String[] args) {

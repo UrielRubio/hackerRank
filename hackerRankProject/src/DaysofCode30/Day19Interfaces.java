@@ -7,7 +7,7 @@ interface AdvancedArithmetic {
 	int divisorSum(int n);
 }
 
-/*class Calculator implements AdvancedArithmetic {
+class Calculatorr implements AdvancedArithmetic {
 	public int divisorSum(int n) {
 		int sum = 0;
 		for (int i = 1; i <= n; i++)
@@ -15,7 +15,7 @@ interface AdvancedArithmetic {
 				sum += i;
 		return sum;
 	}
-}*/
+}
 
 public class Day19Interfaces {
 
@@ -24,7 +24,7 @@ public class Day19Interfaces {
 		int n = scan.nextInt();
 		scan.close();
 
-		AdvancedArithmetic myCalculator = new Calculator();
+		AdvancedArithmetic myCalculator = new Calculatorr();
 		int sum = myCalculator.divisorSum(n);
 		System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName());
 		System.out.println(sum);
